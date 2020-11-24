@@ -6,6 +6,7 @@ import {
   Dimensions,
   Image,
   StatusBar,
+  Text,
   Platform,
 } from "react-native";
 import { Button, Drawer } from "native-base";
@@ -84,10 +85,24 @@ export default class Main extends PureComponent {
             // pa
             paginationStyle={{ marginBottom: 160 }}
           >
-            <Image
-              source={require("../../img/jv.jpg")}
-              style={[styles.child]}
-            />
+            <View>
+              <Image
+                source={require("../../img/jv.jpg")}
+                style={[styles.child]}
+              />
+              <Text
+                style={{
+                  color: "#fff",
+                  position: "absolute",
+                  top: 260,
+                  textAlign: "center",
+                  left: 78,
+                  zIndex: 2,
+                }}
+              >
+                petejhhhrfvejhgvrjhgejhgr
+              </Text>
+            </View>
             <Image
               source={require("../../img/img3.jpg")}
               style={[styles.child]}
@@ -105,17 +120,7 @@ export default class Main extends PureComponent {
               style={[styles.child]}
             />
           </SwiperFlatList>
-          {/* <View
-            style={{
-              width,
-              height: height / 13,
-              backgroundColor: "#ffffff",
-              flexDirection: "row",
-              backgroundColor: "skyblue",
-            }}
-          >
-            <Text>hskvhdrghrmh</Text>
-          </View> */}
+
           <FooterN />
 
           <Foooter navigation={this.props.navigation} />
