@@ -15,15 +15,7 @@ import {
   Body,
   Right,
   Button,
-  Icon,
   Title,
-  Thumbnail,
-  List,
-  ListItem,
-  Content,
-  CardItem,
-  Card,
-  Badge,
   Text,
 } from "native-base";
 import { AntDesign } from "react-native-vector-icons";
@@ -72,6 +64,7 @@ export default function Sermon({ navigation }) {
             onChangeState={onStateChange}
           />
         </View>
+
         <View style={{ marginTop: 10, padding: 10 }}>
           <Text style={{ fontSize: 20, fontWeight: "bold" }}>
             PRODUCT OF PRAYER

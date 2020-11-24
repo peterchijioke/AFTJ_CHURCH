@@ -85,7 +85,7 @@ export default class Main extends PureComponent {
             paginationStyle={{ marginBottom: 160 }}
           >
             <Image
-              source={require("../../img/img5.jpg")}
+              source={require("../../img/jv.jpg")}
               style={[styles.child]}
             />
             <Image

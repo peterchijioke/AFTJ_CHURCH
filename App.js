@@ -7,6 +7,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Main from "./screen/main/Main";
 import Downloads from "./screen/downloads/Downloads";
 import Sermon from "./screen/sermon/Sermon";
+// import GoogleMap from "./screen/Location/GoogleMap";
+import LocationPage from "./screen/Location/LocationPage";
+import Projects from "./screen/Projects/Projects";
+import NewMembers from "./screen/NewMembers/NewMembers";
 
 export default class App extends Component {
   state = {};
@@ -26,8 +30,10 @@ export default class App extends Component {
     return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="location" component={LocationPage} />
+          <Stack.Screen name="newMembers" component={NewMembers} />
+          <Stack.Screen name="projects" component={Projects} />
           <Stack.Screen name="main" component={Main} />
-
           <Stack.Screen name="sermon" component={Sermon} />
           <Stack.Screen name="download" component={Downloads} />
         </Stack.Navigator>

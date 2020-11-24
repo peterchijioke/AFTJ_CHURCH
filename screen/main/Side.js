@@ -138,7 +138,10 @@ export default Side;
 const styles = StyleSheet.create({
   profileView: {
     height: width / 2 - 70,
-    elevation: 7,
+    // elevation: 7,
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+    // elevation:7
   },
   userImage: {
     backgroundColor: "#fff",
